@@ -28,7 +28,9 @@ registrationForm.addEventListener("submit", function (e) {
   })
     .then((response) => response.json())
     .then((data) => {
-      window.location.href = "index.html";
+      if(data.ok){
+        window.location.href = "index.html";
+      }
     })
     .catch((error) => {
       console.error("Error:", error);

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/loginSyles.css">
     <script src="./js/register.js" defer></script>
+    <script src="./js/registerValidations.js" defer></script>
     <title>Register</title>
 </head>
 <body>
@@ -15,14 +16,17 @@
                     <div class="form-input">
                         <label for="user_name">Nombre de Usuario</label>
                         <input type="text" name="user_name" id="user_name" placeholder="nombre">
+                        <p class="error" id="name-error"></p>
                     </div>
                     <div class="form-input">
                         <label for="email">Email</label>
-                        <input type="email" name="email" id="email" autocomplete="email" placeholder="mail@mail.com">
+                        <input  name="email" id="email" autocomplete="email" placeholder="mail@mail.com">
+                        <p class="error" id="email-error"></p>
                     </div>
                     <div class="form-input">
                         <label for="password">Contraseña</label>
                         <input type="password" name="password" id="password" placeholder="contraseña">
+                        <p class="error" id="password-error"></p>
                     </div>
                     <div class="send-btn">
                         <button type="submit" id="register-btn">Registrarse</button>

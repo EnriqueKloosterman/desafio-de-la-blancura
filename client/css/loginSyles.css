@@ -59,7 +59,12 @@
   border-radius: 3px;
   border: none;
 }
-
+.error{
+  padding: 3px;
+  margin-top: 4px;
+  color: #dc143c;
+  font-size: 8px;
+}
 .send-btn {
   display: flex;
   flex-direction: row-reverse;
@@ -127,6 +132,9 @@
   .redirect{
     font-size: large;
   }
+  .error{
+    font-size: 10px;
+  }
 }
 @media (min-width: 1024px) {
   .form-container {
@@ -135,5 +143,9 @@
   }
   .form-input input{
     font-size: 1.5rem;
+  }
+  .error{
+    font-size: 12px;
+    font-weight: 800;
   }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/loginSyles.css">
     <script src="./js/login.js" defer></script>
+    <script src="./js/loginValidtaions.js" defer></script>
     <title>login</title>
 </head>
 <body>
@@ -14,12 +15,14 @@
                 <form action="http://localhost:3000/api/v1/auth/login" method="post">
                     <div class="form-input">
                     <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="mail@mail.com" autocomplete="email">
+                    <input  name="email" id="email" placeholder="mail@mail.com" autocomplete="email" required>
+                    <p class="error" id="email-error"></p>
                 </div>
                 <div class="form-input">
                     <label for="password">Contraseña</label>
-                    <input type="password" name="password" id="password" placeholder="contraseña">
+                    <input type="password" name="password" id="password" placeholder="contraseña" required>
                 </div>
+                <p class="error" id="password-error"></p>
                 <div class="send-btn">
                     <button type="submit" id="login">Ingresar</button>
                 </div>
