@@ -17,10 +17,10 @@ Para ejecutar el servidor backend, sigue estos pasos:
 
    Esto iniciará el servidor Nest JS en modo de desarrollo.
 
-### Visualizar el Frontend
+#### Visualizar el Frontend
 Para visualizar la página en tu navegador, simplemente abre el archivo index.html en tu navegador web preferido.
 
-### Repositorio en GitHub
+##### Repositorio en GitHub
 Puedes encontrar el código fuente de este proyecto en el siguiente repositorio de GitHub:
 
 https://github.com/EnriqueKloosterman
