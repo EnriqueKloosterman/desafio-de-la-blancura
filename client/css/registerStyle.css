@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.register-form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 2rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: rgba(112, 128, 144, 0.2);
+}

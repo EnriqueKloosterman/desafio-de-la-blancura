@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.bg{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  opacity: 0.9;
+  background-image: url("../img/img.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.login-form,
+.register-form,
+.user {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+}
+.redirect{
+  margin-top: 1rem;
+  text-align: center;
+  text-shadow: 0 0 10px white;
+  font-weight: bold;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: rgba(112, 128, 144, 0.4);
+  box-shadow: white 0px 0px 15px;
+}
+
+.form-input {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.form-input label {
+  margin-bottom: 5px;
+  text-shadow: 0 0 5px white;
+  font-weight: bold;
+}
+.form-input input {
+  padding: 3px;
+  border-radius: 3px;
+  border: none;
+}
+
+.send-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 5px;
+}
+
+.logout-btn{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+.logout-btn button{
+  padding: 8px;
+  background-color: #dc143c;
+  color: antiquewhite;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.send-btn button {
+  padding: 4px;
+  background-color: #1f771f;
+  color: antiquewhite;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+}
+
+.redirect-span a {
+  text-decoration: none;
+  color:#1f771f
+
+}
+.user .user-card{
+  padding: 2%;
+  text-align: center;
+  width: 90%;
+  border-radius: 8px;
+  background-color: rgba(112, 128, 144, 0.4);
+  box-shadow: white 0px 0px 15px;
+}
+
+.user .user-card .user-text{
+  font-weight: bold;
+  margin: 5px 0 5px 0;
+}
+
+@media (min-width: 720px) {
+  .form-container {
+    width: 680px;
+    font-size: 1.5rem;
+  }
+  .form-input input{
+    font-size: 1rem;
+  }
+  .send-btn button{
+    font-size: 1.2rem;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 5px;
+  }
+  .redirect{
+    font-size: large;
+  }
+}
+@media (min-width: 1024px) {
+  .form-container {
+    width: 900px;
+    font-size: 2rem;
+  }
+  .form-input input{
+    font-size: 1.5rem;
+  }
+}
